@@ -7,60 +7,47 @@ projects: ["octo-org/1", "octo-org/44"]
 assignees:
   - octocat
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+
   - type: input
     id: contact
     attributes:
       label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      description: What is your name?
+      placeholder: ex. Ranticha@cmu.ac.th
     validations:
-      required: false
-  - type: textarea
-    id: what-happened
+      required: false 
+
+  - type: markdown
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
+      value: |
+        Thanks for taking the time to fill out this bug report!
+
   - type: dropdown
-    id: version
+    id: request
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Type of Request
+      description: Select the type of your request
       options:
-        - 1.0.2 (Default)
+        - New Feature
         - 1.0.3 (Edge)
       default: 0
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: sugges
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: What is the OS which you want to suggest?
       multiple: true
       options:
-        - Firefox
+        - Selections
         - Chrome
         - Safari
         - Microsoft Edge
   - type: textarea
-    id: logs
+    id: detials
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: What are the details of your suggestions?
+      description: Explain what do you want
       render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+
 ---
