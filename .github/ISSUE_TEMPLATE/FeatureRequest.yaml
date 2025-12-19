@@ -1,6 +1,6 @@
 name: Feature
 description: File a bug report
-title: "[Feature]: "
+title: "Feature: "
 labels: ["bug", "triage"]
 projects: ["octo-org/1", "octo-org/44"]
 assignees:
@@ -9,8 +9,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+      
 
   - type: input
     id: contact
@@ -18,15 +17,17 @@ body:
       label: Contact Details
       description: What is your name?
       placeholder: ex. Ranticha@cmu.ac.th
+      value: |
+        Thanks for taking the time to fill out this bug report!
     validations:
       required: false
 
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
+      label: Type for request
+      description: select the type of your request
+      dropdown : New Feature
       value: "A bug happened!"
     validations:
       required: true
