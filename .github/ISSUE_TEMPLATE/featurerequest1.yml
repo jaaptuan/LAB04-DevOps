@@ -49,4 +49,5 @@ body:
       label: What are the details of your suggestions?
       description: Explain what do you want
       render: shell
+      placeholder: Feature Details!
 ---
